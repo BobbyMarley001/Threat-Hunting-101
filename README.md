@@ -124,7 +124,7 @@ One platform that lets you:
 ## Full Blog Post
 
 Live version with beautiful formatting:  
-[Threat Hunting 101 – Full Article]((https://bobbymarley001.github.io/Threat-Hunting-101/)) 
+[Threat Hunting 101 – Full Article](https://bobbymarley001.github.io/Threat-Hunting-101/)
 
 <br>
 
