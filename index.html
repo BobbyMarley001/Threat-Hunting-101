@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Hunting 101: Build a Proactive Security Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
+        .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color: white; padding: 60px 0; }
+        .section-padding { padding: 40px 0; }
+        .icon { font-size: 2rem; margin-right: 10px; }
+        .tip { background: #e7f3ff; border-left: 4px solid #0d6efd; padding: 15px; margin: 20px 0; }
+        .list-group-item { border: none; padding: 10px 0; }
+        .benefit { background: #d4edda; margin: 5px 0; padding: 10px; border-radius: 5px; }
+        .challenge { background: #f8d7da; margin: 5px 0; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cybersecurity Threat Hunting" class="img-fluid rounded mb-4" style="max-height: 400px; object-fit: cover;">
+            <h1 class="display-4 fw-bold">🚨 Threat Hunting 101: Build a Proactive Security Program</h1>
+            <p class="lead">Make Security Possible™</p>
+            <p class="fs-5">Waiting for attackers to strike is like locking the barn after the horses are gone. Reactive security may work sometimes—but the real winners take proactive action. Enter threat hunting: the art of finding attackers and vulnerabilities before they become crises.</p>
+        </div>
+    </section>
+
+    <!-- Why Threat Hunting Matters -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h2 class="h2 mb-4"><i class="fas fa-check-circle text-success icon"></i>✅ Why Threat Hunting Matters</h2>
+            <p class="lead">Threat hunting isn’t just chasing bad actors—it’s about understanding your environment, identifying gaps, and strengthening your defenses.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mt-3">Challenges teams face today:</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item challenge"><i class="fas fa-clock text-danger me-2"></i>🕒 Overwhelmed workloads – Alerts keep piling up, leaving no time to hunt proactively.</li>
+                        <li class="list-group-item challenge"><i class="fas fa-tools text-danger me-2"></i>🛠️ Technology sprawl – Too many tools slow teams down instead of helping.</li>
+                        <li class="list-group-item challenge"><i class="fas fa-database text-danger me-2"></i>📊 Data overload – Hunting requires large datasets and trend analysis over time.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mt-3">Benefits of proactive threat hunting:</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item benefit"><i class="fas fa-bullseye text-success me-2"></i>🎯 Identify sophisticated attacks before they escalate</li>
+                        <li class="list-group-item benefit"><i class="fas fa-search text-success me-2"></i>🔍 Spot vulnerabilities and hygiene issues early</li>
+                        <li class="list-group-item benefit"><i class="fas fa-bolt text-success me-2"></i>⚡ Improve detection rules and reduce false positives</li>
+                        <li class="list-group-item benefit"><i class="fas fa-lightbulb text-success me-2"></i>💡 Prioritize technology investments strategically</li>
+                        <li class="list-group-item benefit"><i class="fas fa-chart-line text-success me-2"></i>📣 Communicate risk and action plans clearly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Threat Hunting -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="h2 mb-4"><i class="fas fa-user-secret text-primary icon"></i>🕵️‍♂️ Types of Threat Hunting</h2>
+            <p class="lead">Before looking for the “bad guys,” you need to know what’s normal.</p>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Baselining Normal vs. Abnormal Behavior</strong><br>Understand standard network and user activity to quickly spot anomalies.</li>
+                <li class="list-group-item"><strong>Retroactive IOC Analysis</strong><br>Look back at historical data to identify indicators of compromise (IOCs).</li>
+                <li class="list-group-item"><strong>Behavioral-Based TTPs</strong><br>Track attacker tactics, techniques, and procedures to detect advanced threats.</li>
+            </ol>
+            <div class="tip">
+                <i class="fas fa-lightning-bolt text-warning me-2"></i><strong>⚡ Pro Tip:</strong> Start with baselining to understand normal behavior, then move to detecting malicious activity with confidence.
+            </div>
+        </div>
+    </section>
+
+    <!-- Prerequisites -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h2 class="h2 mb-4"><i class="fas fa-building text-info icon"></i>🏗️ Prerequisites for Effective Threat Hunting</h2>
+            <p class="lead">Before hunting, set a strong foundation:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-file-alt text-secondary me-2"></i>📁 Complete Logging – Ensure logs (e.g., Windows Event IDs, EDR) are detailed enough to detect anomalies.</li>
+                <li class="list-group-item"><i class="fas fa-robot text-secondary me-2"></i>🤖 Automation – Collect and normalize data automatically for faster analysis.</li>
+                <li class="list-group-item"><i class="fas fa-globe text-secondary me-2"></i>🌐 Threat Intelligence & Machine Learning – Spot patterns and anomalies efficiently.</li>
+                <li class="list-group-item"><i class="fas fa-handshake text-secondary me-2"></i>🏛️ Leadership Buy-In – Share program goals with executives to get support.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Five Steps -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="h2 mb-4"><i class="fas fa-key text-success icon"></i>🔑 Five Steps to a Threat Hunting Program</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>1️⃣ Define Your Mission</strong><br>Every hunt needs a goal. Example: Detect low-and-slow brute force attacks or misconfigured systems.</li>
+                <li class="list-group-item"><strong>2️⃣ Use Trending Data</strong><br>Analyze long-term data (30–90 days) to identify sophisticated attacks and weak points.</li>
+                <li class="list-group-item">
+                    <strong>3️⃣ Make Hunts Iterative</strong>
+                    <ul>
+                        <li>Base future hunts on findings.</li>
+                        <li>Reduce noise and improve detection accuracy.</li>
+                        <li>Example: Start with weak protocol identification, then move to detecting Kerberoasting attempts.</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <strong>4️⃣ Hunt for Hygiene Issues</strong><br>Threat hunting also improves security hygiene:
+                    <ul>
+                        <li><i class="fas fa-user text-muted me-1"></i>👤 Abnormal usernames</li>
+                        <li><i class="fas fa-lock text-muted me-1"></i>🔒 Weak/deprecated protocols (NTLM, RC4/DES)</li>
+                        <li><i class="fas fa-shield-alt text-muted me-1"></i>🛡️ Privileged account usage</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <strong>5️⃣ Close Gaps in Detection</strong>
+                    <ul>
+                        <li>Tune static correlation rules</li>
+                        <li>Automate alerts for anomalous activity</li>
+                        <li>Strengthen defenses against attackers bypassing old rules</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Measure and Report -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h2 class="h2 mb-4"><i class="fas fa-chart-bar text-warning icon"></i>📈 Measure and Report Success</h2>
+            <p class="lead">Track and share metrics to prove ROI:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-list-ol text-secondary me-2"></i>Number of threat hunts conducted</li>
+                <li class="list-group-item"><i class="fas fa-percentage text-secondary me-2"></i>% of environment reviewed</li>
+                <li class="list-group-item"><i class="fas fa-tools text-secondary me-2"></i>Security improvements based on findings</li>
+            </ul>
+            <p class="mt-3">📊 Clear reporting shows leadership that proactive security works.</p>
+        </div>
+    </section>
+
+    <!-- Automate with GreyMatter -->
+    <section class="section-padding" style="background-color: #0d6efd; color: white;">
+        <div class="container text-center">
+            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Automation AI Robot" class="img-fluid rounded mb-4" style="max-height: 300px; object-fit: cover;">
+            <h2 class="h2 mb-4"><i class="fas fa-robot text-light icon"></i>⚡ Automate Threat Hunting with GreyMatter</h2>
+            <p class="lead">ReliaQuest GreyMatter helps teams:</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-layer-group me-2"></i>Aggregate & normalize logs from SIEM, EDR, multi-cloud, and apps</li>
+                <li><i class="fas fa-search me-2"></i>Run strategic, iterative threat hunts</li>
+                <li><i class="fas fa-chart-pie me-2"></i>Analyze IOCs and visualize normal vs. abnormal behavior</li>
+                <li><i class="fas fa-volume-mute me-2"></i>Reduce noise and proactively identify threats</li>
+            </ul>
+            <p class="fs-5 mt-3">Automation + AI = more time for defenders, less for attackers.</p>
+        </div>
+    </section>
+
+    <!-- Key Takeaways -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="h2 mb-4"><i class="fas fa-award text-danger icon"></i>🏆 Key Takeaways</h2>
+            <ul class="list-group">
+                <li class="list-group-item benefit"><i class="fas fa-rocket text-success me-2"></i>Start proactively, don’t wait for breaches</li>
+                <li class="list-group-item benefit"><i class="fas fa-chart-line text-success me-2"></i>Understand your environment via baselining</li>
+                <li class="list-group-item benefit"><i class="fas fa-target text-success me-2"></i>Define goals for each hunt</li>
+                <li class="list-group-item benefit"><i class="fas fa-cogs text-success me-2"></i>Use automation and trending data for sophisticated threats</li>
+                <li class="list-group-item benefit"><i class="fas fa-wrench text-success me-2"></i>Focus on hygiene & vulnerability fixes</li>
+                <li class="list-group-item benefit"><i class="fas fa-sync-alt text-success me-2"></i>Iterate, measure, and improve continuously</li>
+            </ul>
+            <div class="tip mt-4">
+                <i class="fas fa-shield-alt text-primary me-2"></i><strong>🔒 Threat hunting transforms your team from reactive responders to strategic defenders, stopping attacks before they happen.</strong>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
