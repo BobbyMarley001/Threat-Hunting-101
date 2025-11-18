@@ -124,7 +124,7 @@ One platform that lets you:
 ## Full Blog Post
 
 Live version with beautiful formatting:  
-[Threat Hunting 101 – Full Article](https://yourwebsite.com/threat-hunting-101) *(replace with your actual link)*
+[Threat Hunting 101 – Full Article]((https://bobbymarley001.github.io/Threat-Hunting-101/)) 
 
 <br>
 
