@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yourusername"><img src="https://img.shields.io/badge/Author-@github-0d6efd?style=for-the-badge&logo=github" alt="Author"></a>
+  <a href="https://github.com/bobbymarley001"><img src="https://img.shields.io/badge/Author-@github-0d6efd?style=for-the-badge&logo=github" alt="Author"></a>
   <img src="https://img.shields.io/badge/Cybersecurity-Threat%20Hunting-blueviolet?style=for-the-badge&logo=shield" alt="Topic">
   <img src="https://img.shields.io/badge/Version-2025-success?style=for-the-badge" alt="Year">
 </p>
